@@ -46,6 +46,7 @@ module "vpc_networking" {
     avail_zones             = var.avail_zones
     prod_vpc_id             = module.vpc_prod.prod_vpc_id
     devOps_vpc_id           = module.vpc_prod.prod_vpc_id
+    prod_igw_id 	    = module.vpc_prod.prod_igw_id
     tgw_id                  = var.tgw_id
     ec2_sg_id               = var.ec2_sg_id
 }
